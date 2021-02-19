@@ -1,0 +1,72 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body {
+	height: 100%;
+
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	color: black;
+	font-size: 1rem;
+	text-align: center;
+}
+
+main {
+	position: absolute;
+	top: 20%;
+	bottom: 20%;
+	left: 10%;
+	right: 10%;
+
+	display: grid;
+	grid-template: 20% 1fr 20% / 1fr;
+	gap: 2em;
+}
+
+#player-choice {
+	display: grid;
+	grid-template: 1fr / 1fr 1fr 1fr;
+	gap: 2em;
+
+	img {
+		margin: 0 auto;
+		width: 4rem;
+		height: 4rem;
+
+		transition: width 0.2s ease-out, height 0.2s ease-out;
+	}
+
+	img:hover {
+		width: 5em;
+		height: 5em;
+		transition: width 0.2s ease-out, height 0.2s ease-out;
+	}
+}
+
+#result-message {
+
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+#profile {
+	text-decoration: none;
+	color: white;
+
+	padding: 1em 2em;
+	background-color: black;
+}
+
+#profile:hover {
+	background-color: darkgray;
+}
